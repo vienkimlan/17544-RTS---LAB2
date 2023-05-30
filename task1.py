@@ -5,7 +5,7 @@ import numpy as np
 class Task1:
   
     def __init__(self, screen):
-        print("Init task 1")
+        print("Init task screen: %d", screen)
 
         np.set_printoptions(suppress=True)
 
@@ -29,7 +29,7 @@ class Task1:
         image = cv2.resize(image, (224, 224), interpolation=cv2.INTER_AREA)
 
         # Show the image in a window
-        cv2.imshow("Webcam Image", image)
+        # cv2.imshow("Webcam Image", image)
 
         # Make the image a numpy array and reshape it to the models input shape.
         image = np.asarray(image, dtype=np.float32).reshape(1, 224, 224, 3)
