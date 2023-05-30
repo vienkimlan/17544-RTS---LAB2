@@ -1,5 +1,5 @@
 # from Scheduler.task import *
-from scheduler2 import *
+from scheduler import *
 import time
 
 from task1 import *
