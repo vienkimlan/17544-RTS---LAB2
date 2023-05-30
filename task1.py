@@ -4,7 +4,7 @@ import numpy as np
 
 class Task1:
   
-    def __init__(self):
+    def __init__(self, screen):
         print("Init task 1")
 
         np.set_printoptions(suppress=True)
@@ -16,7 +16,7 @@ class Task1:
         self.class_names = open("labels.txt", "r").readlines()
 
         # CAMERA can be 0 or 1 based on default camera of your computer
-        self.camera = cv2.VideoCapture(0)
+        self.camera = cv2.VideoCapture(screen)
 
         return
 
