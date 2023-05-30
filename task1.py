@@ -5,7 +5,7 @@ import numpy as np
 class Task1:
   
     def __init__(self, screen):
-        print("Init task screen: %d", screen)
+        print("Init task screen: ", screen)
 
         np.set_printoptions(suppress=True)
 
