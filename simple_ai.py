@@ -9,7 +9,7 @@ scheduler.SCH_Init()
 
 task1 = Task1()
 
-scheduler.SCH_Add_Task(task1.Task_Run, 100, 100)
+scheduler.SCH_Add_Task(task1.Task_Run, 1000, 5000)
 
 
 while (True):
